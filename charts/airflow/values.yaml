@@ -453,7 +453,7 @@ web:
     annotations: {}
     sessionAffinity: "None"
     sessionAffinityConfig: {}
-    type: ClusterIP
+    type: LoadBalancer
     externalPort: 8080
     loadBalancerIP: ""
     loadBalancerSourceRanges: []
@@ -955,7 +955,7 @@ dags:
     ## EXAMPLE: (SSH - GitHub)
     ##   url: "git@github.com:USERNAME/REPOSITORY.git"
     ##
-    url: ""
+    url: "https://github.com/apache/airflow/tree/master/airflow/example_dags"
 
     ## the branch/tag/sha1 which we clone
     ##
